@@ -1,2 +1,3 @@
-linkup/package-lock.json
-linkup/package.json
+node_modules/
+package-lock.json
+package.json
