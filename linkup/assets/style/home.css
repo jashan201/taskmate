@@ -1,0 +1,489 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    gap: 25px;
+    padding: 0 15px; 
+
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 25px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   
+}
+
+.linkup {
+    color: rgb(11, 14, 141);
+    font-weight: bold;
+    font-size: 2em;
+    margin-right: 30px;
+
+   
+  }
+  .custom-design{
+    background-color: rgb(24, 126, 185);
+    color: white;
+    border-radius: 5px;
+    margin-left: 4px;
+    padding: 0 5px;
+  }
+
+.search-section {
+    top: 4px;
+    position: relative;
+    margin-right: 60px;
+    margin-left: 30px;
+
+}
+.search-section i {
+    position: absolute;
+    right: 10px;
+    top: 34%;
+    transform: translateY(-50%);
+    color: #888;
+}
+    .search-section input[type="search"] {
+        padding: 8px 30px 8px 10px; 
+        border: 1px solid #ddd;
+        border-radius: 20px;
+    }
+.header-links {
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #0077b5;
+    font-size: 14px;
+}
+.nav-link i {
+    margin-right: 5px;
+}
+.profile-icon {
+    margin-left: 45px;
+}
+
+.profile-pic {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    padding: 0 70px;
+}
+
+ .feed, .profile-viewres-sidebar {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 0 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.profile-sidebar {
+    background-color: #ffffff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    height: fit-content; 
+    width: 300px;
+}
+
+.profile-pic-large {
+    width: 120px; 
+    height: 120px; 
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+.profile-name {
+    font-size: 1.5em; 
+    margin-top: 10px;
+}
+
+.profile-role {
+    color: #666;
+    font-size: 1em;
+}
+
+.profile-location {
+    font-size: 0.85em;
+    color: #888;
+    margin-bottom: 20px;
+}
+.profile-actions {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.profile-actions .btn {
+    display: block; 
+    margin: 10px auto;
+    padding: 10px 20px;
+    width: 90%; 
+    border-radius: 20px;
+    border: 1px solid #0077b5; 
+    cursor: pointer;
+}
+
+.follow-btn {
+    background-color: #005fa3;
+    color: white;
+
+}
+.follow-btn:hover {
+    background-color: #0a5286;
+}
+.connect-btn{
+    color: #0077b5;
+    background-color: #ffffff; 
+}
+.connect-btn:hover {
+    background-color: #f3f2f2;
+}
+.profile-stats {
+    font-size: 0.85em;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: grid;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc; 
+    padding-bottom: 20px;
+}
+
+.profile-stat:last-child {
+    border-right: none;
+}
+.profile-stat {
+    text-align: center;
+    width: 180%;
+    position: relative;
+    font-size: 18px;
+}
+.profile-links .profile-link {
+    display: block;
+    color: #0077b5;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.profile-links .profile-link i {
+    margin-right: 5px;
+}
+
+
+.btn {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+
+.profile-links a {
+    display: block;
+    color: #0077b5;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.footer {
+    background-color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Feed and Post Styles */
+.feed {
+    width: 50%;
+    margin-right: 10px; 
+}
+
+.post {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.post h3 {
+    margin-top: 0;
+}
+
+.post img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.profile-thumbnail {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-info h3 {
+    margin: 0;
+}
+.user-info {
+    flex-grow: 1;
+}
+.user-info p {
+    font-size: 0.8em;
+    color: #666;
+}
+
+.post-content {
+    margin-bottom: 10px;
+}
+
+.post-actions button {
+    padding: 5px 10px;
+    margin-right: 5px;
+}
+.feed {
+    margin: 0 auto;
+    max-width: 600px; 
+}
+
+.post {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-info {
+    flex-grow: 1;
+}
+
+.user-info h3 {
+    margin: 0;
+}
+
+.occupation, .post-time {
+    font-size: 0.8em;
+    color: #666;
+}
+
+.post-time {
+    display: block; 
+}
+
+.post-content {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.post-image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.post-actions {
+    font-size: 1.2em;
+}
+
+.post-actions i {
+    margin-right: 10px;
+    cursor: pointer;
+}
+.suggestions-column {
+    width: 25%;
+}
+.suggestions-column {
+    width: 25%;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-left: 10px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: fit-content; 
+}
+.user-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    justify-content: space-between;
+    margin: 13px 0;
+}
+
+.user-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.user-card .user-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 2px;
+    display: grid; 
+    grid-template-columns: auto auto;
+}
+
+.user-card .user-occupation {
+    font-size: 0.85rem;
+    color: #666;
+} 
+
+.user-card .user-city {
+    font-size: 0.85rem; 
+    color: #555; 
+    position: absolute;
+    left: 80px;
+    top:45px
+}
+
+.user-card .add-friend {
+    margin-left: auto;
+    cursor: pointer;
+    color: #0077b5;
+}
+/**FOOTER**/
+footer {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 2rem 0;
+    line-height: 1.6;
+}
+
+.footer-content {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media a {
+    color: #000000;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-size: 2.5rem;
+}
+
+.social-media a:hover {
+    color:#3b3838
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.footer-links ul li a {
+    color: #000000;
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+
+.footer-links ul li a:hover {
+    color:#222020;
+}
+
+.contact-info {
+    line-height: 1.6;
+}
+.contact-info p {
+    margin-bottom: 1rem;
+    cursor: pointer;
+    
+    &:hover{
+        color:#0c0808;
+    }
+}
+
+.contact-info i {
+    font-size: 2rem;
+    margin-right: 1rem;
+
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 1rem 0;
+    border-top: 0.1rem solid rgb(51, 49, 49);
+    margin-top: 2rem;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
