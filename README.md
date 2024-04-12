@@ -2,4 +2,4 @@
 ### username: saad@linkup.com
 ### password: jashanpreet
 
-click [here] to test the application.
+Click [here](https://jashan201.github.io/link-up/) to test the application.
