@@ -5,7 +5,7 @@ function Footer(props) {
     return (
         <footer>
         <div className='icons'>
-            <i><FontAwesomeIcon icon={props.Instagram} /></i>
+            <i><FontAwesomeIcon icon={props.Instagram} /></i> 
             <i><FontAwesomeIcon icon={props.Facebook} /></i>
             <i><FontAwesomeIcon icon={props.Twitter} /></i>
             <i><FontAwesomeIcon icon={props.Youtube} /></i>
