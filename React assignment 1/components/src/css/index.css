@@ -1,0 +1,144 @@
+.container {
+    margin-inline: auto;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+/*--------------Header--------------*/
+
+header {
+    height: 60px;
+    background-color: #f1efef;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header nav ul{
+    display: flex;
+    gap: 10px;
+    margin-top: 6px;
+}
+
+.header nav ul a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/*------------Banner--------------*/
+
+.banner {
+    display: flex;
+    background-color: #39ac739d;
+    height: 80vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.banner h1 {
+    font-size: 35px;
+}
+
+.banner img {
+    height: 500px;
+    width: 400px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+.darkButton {
+    color: #000;
+    border: 2px solid #000;
+}
+
+.lightButton {
+    background-color: #fff;
+    color: #000;
+    margin-left: 10px;
+    border: 2px solid #000;
+}
+  
+.selected {
+  background-color: #000000d6;
+  color: #fff;
+}
+
+/*----------Products---------*/
+
+.products {
+    background-color: #f1efef;
+}
+
+.products h1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.sections {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 200px;
+}
+
+ .sections section {
+    border: 2px solid black;
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+    padding: 10px;
+    height: 350px;
+    background-color: #39ac7378;
+}
+
+.products img {
+    width: 200px;
+    height: 250px;
+}
+
+.products P {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+/*----------Footer-------------*/
+
+footer {
+    background-color: #39ac739d;
+    height: 120px;
+    display: grid;
+    place-items: center;
+}
+
+.icons i{
+    font-size: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.list {
+    display: flex;
+    gap: 10px;
+}
+
+.list a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+}
